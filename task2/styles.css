@@ -9,20 +9,37 @@ body {
   height: 100vh;
 }
 
+@media (orientation: landscape) {
+  .container {
+    display: flex;
+  }
+}
+@media (orientation: portrait) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 .square {
   height: 100px;
   width: 100px;
-  background-color: coral;
-  margin: 16px;
+  background-color: #ff7f50;
+  margin: 8px;
 }
 @media screen and (min-width: 600px) {
   .square {
-    background-color: aqua;
+    background-color: #8a2be2;
+  }
+}
+@media screen and (min-width: 900px) {
+  .square {
+    background-color: #a61;
   }
 }
 @media screen and (min-width: 1200px) {
   .square {
-    background-color: gold;
+    background-color: #c47;
   }
 }
 
