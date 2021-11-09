@@ -1,0 +1,48 @@
+@import 'layout.scss';
+
+div {
+  height: 200px;
+  display: flex;
+}
+.navigation {
+  background-color: #ff7f50;
+  flex-grow: 1;
+}
+.product-list {
+  background-color: #006400;
+  flex-grow: 1;
+}
+.news {
+  background-color: #0ff;
+  flex-grow: 1;
+}
+span {
+  margin: auto;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-transform: lowercase;
+  padding: 8px;
+  background-color: #faebd7;
+  border-radius: 4px;
+}
+
+@include for-medium-width {
+  .product {
+    display: flex;
+    flex-grow: 2;
+  }
+  .navigation {
+    width: 0;
+  }
+  .product-list {
+    width: 0;
+  }
+}
+
+@include for-large-width {
+  .content {
+    display: flex;
+  }
+  div {
+    width: 0;
+  }
+}
