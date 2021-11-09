@@ -32,7 +32,7 @@
 
     &:hover {
       .submenu {
-        visibility: initial;
+        display: inherit;
         color: black;
       }
     }
@@ -47,7 +47,8 @@
     line-height: 3em;
     cursor: pointer;
     min-width: 120px;
-    visibility: hidden;
+    display: none;
+    position: absolute;
     z-index: 1;
 
     &__item {
